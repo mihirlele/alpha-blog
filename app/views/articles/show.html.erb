@@ -1,11 +1,10 @@
-<h3> Details of the submitted Article:</h3>
-
-<p>
-     Title: <%= @article.title %> 
-</p>
-</br>
-<p>
-     Description: <%= @article.description %>
-</p>
-
-<%= link_to "Go back to the index page", articles_path %>
+<h2 align="center">Title: <%= @article.title %> </h2>
+<div class="well col-xs-12 col-xs-offset-2">
+  <h4><Strong>Description:</Strong></h4>       
+  <hr>
+  <p align="center"><%= @article.description %></p>
+ 
+  <div class="btn btn-default btn-success">
+  <%= link_to "Go back to the index page", articles_path %>
+  </div>
+</div> 
